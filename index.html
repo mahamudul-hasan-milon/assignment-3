@@ -89,7 +89,7 @@
                             <a class="btn text-black bg-green-400 font-bold">Book Consult <svg
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor"
-                                    class="size-5 rounded-full p-1 bg-[#ABEF5F]">
+                                    class="size-5 rounded-full p-1 text-white bg-black">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg></a>
@@ -319,14 +319,101 @@
         <section class="md:container mx-auto my-24">
             <div>
                 <!-- Content -->
-                <div>
+                <div class="text-center space-y-7">
+                    <button class="btn bg-[#ABEF5F33] mt-[100px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                        Explore More</button>
                     <h2 class="text-4xl font-bold">Find Your Perfect Match</h2>
                     <p>The barn house captivates with its blend of rustic charm and modern sophistication,
                         featuring weathered wood, sleek metal accents.</p>
                 </div>
-                <!-- Card -->
-                <div>
+                <!-- Carousel -->
+                <div class="mt-10 carousel w-full rounded-3xl">
+                    <!-- slide -1 -->
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="assets/c1.jpg" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide -2 -->
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="assets/c2.jpg" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide-3 -->
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img src="assets/c3.jpg" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide-4 -->
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img src="assets/c4.jpg" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide5" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide-5 -->
+                    <div id="slide5" class="carousel-item relative w-full">
+                        <img src="assets/c5.jpg" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide6" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <!-- slide-6 -->
+                    <div id="slide6" class="carousel-item relative w-full">
+                        <img src="assets/c6.jpg" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide5" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Form Section -->
+        <section class="md:container mx-auto my-24">
+            <div style="background-image: url(assets/bg.jpg);">
+                <!-- Content -->
+                <div class="text-center space-y-7">
+                    <button class="btn bg-[#ABEF5F33] mt-[100px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                        Let's Connect</button>
+                    <h2 class="text-4xl font-bold">Let s Discuss Next Project</h2>
+                    <p>The barn house captivates with its blend of rustic charm and modern sophistication,
+                        featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <!-- Form -->
+                <div class="mt-7 grid grid-cols-2 gap-5 mx-56">
+                    <input type="text" placeholder="First Name*" class="input input-bordered border-none rounded-3xl" />
+                    <input type="text" placeholder="Last Name*" class="input input-bordered border-none rounded-3xl" />
+                    <input type="text" placeholder="Phone Number*"
+                        class="input input-bordered border-none rounded-3xl" />
+                    <input type="text" placeholder="Email*" class="input input-bordered border-none rounded-3xl" />
+                    <input type="text" placeholder="Write your message here"
+                        class="input input-bordered border-none col-span-2 rounded-2xl" />
+                    <a class="btn text-black bg-green-400 font-bold col-span-2 rounded-3xl">Send Mail<svg
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5 rounded-full p-1 text-white bg-black">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg></a>
                 </div>
             </div>
         </section>
